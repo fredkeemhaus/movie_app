@@ -31,11 +31,11 @@ class App extends Component {
     setTimeout(() => {
       this.setState({
         movies: [
-          ...this.state.movies,
           {
             title: "Aqua Man",
             poster: "http://img09.deviantart.net/3d97/i/2016/130/f/a/aquaman_2016_movie_poster_by_edaba7-d9fhens.jpg"
-          }
+          },
+          ...this.state.movies,
         ]
       })
     }, 1000)
