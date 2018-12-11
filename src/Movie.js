@@ -32,4 +32,10 @@ class MoviePoster extends Component{
     }
 }
 
+function MoviePoster({poster}){
+    return (
+        <img src={this.props.poster} alt="Movie Poster" />
+    )
+}
+
 export default Movie;
